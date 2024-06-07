@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Keyframes Animations */
+@keyframes float-in {
+	from {
+		top:100px;
+		filter: opacity(0%);
+	}
+	to {
+		top:0px;
+		filter: opacity(100%);
+	}
+}
+@keyframes sink-in {
+	from {
+		top:-100px;
+		filter: opacity(0%);
+	}
+	to {
+		top:0px;
+		filter: opacity(100%);
+	}
+}
+
+/* Cursor Effect */
+.cursor-dot {
+	width:5px;
+	height:5px;
+	background-color: white;
+}
+.cursor-outline {
+	width:22px;
+	height:22px;
+	border: 5px solid hsla(0, 0%, 100%, 0.5);
+}
+.cursor-dot, .cursor-outline {
+	position: fixed;
+	top:0;
+	left:0;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	z-index:1;
+	pointer-events: none;
+}
+
+/* Document */
+h1 {
+	color:black;
+	font-size:100px;
+	text-align:center;
+	position:relative;
+	top:0px;
+	animation-name:float-in;
+	animation-duration: 1s;
+}
+.nav {
+	animation-name:sink-in;
+	position:relative;
+	top:0px;
+	width:100%;
+	height:65px;
+	animation-duration: 1s;
+	background-color:hsla(0, 0%, 100%, 0.05);
+
+	margin:2px;
+}
+html {
+	height:100%;
+}
+body {
+	background-color:#C9DCFF;
+	cursor:none;
+	margin:0;
+	min-height:100%;
+	background-image: linear-gradient(40deg, #3D47B1, #549BDE);
+}
+.nava {
+	float:right;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+h4 {
+	text-align: center;
+	background-color:aliceblue;
+	position:relative;
+	border-radius:100px;
+	width:16%;
+	height:30px;
+	left:42%;
+	padding-top:0.5%;
+	font-size:17px;
+	animation-name:float-in;
+	animation-duration: 1.4s;
+}
+#des {
+	padding-left:15%;
+	padding-right:15%;
+	text-align:center;
+		animation-name:float-in;
+	animation-duration: 1.4s;
+}
+h4:hover {
+	background-color:black;
+	color:white;
+	text-shadow: 1px 1px 7px lightblue;
+}
+.nava:hover {
+	color:#EAF1E4;
+	text-shadow: 3px 3px 9px lightblue;
+}
+h1:hover {
+	text-shadow: 5px 5px 20px lightblue;
+}
+h1::selection {
+	text-shadow: 3px 3px 20px lightblue;
+}
