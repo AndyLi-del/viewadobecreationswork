@@ -1,35 +1,27 @@
-const spotlightEl = document.querySelector("#spotlight");
-let spotlightOn = true;
+// JavaScript Document
+const cursorDot = document.querySelector("[data-cursor-dot]");
+const cursorOutline = document.querySelector("[data-cursor-outline]")
 
+window.addEventListener("mousemove", function (e){
+	const posX = e.clientX;
+	const posY = e.clientY;
+	cursorDot.style.left = parseInt(posX) + "px";
+	cursorDot.style.top = parseInt(posY) + "px";
+	cursorOutline.animate({
+		left: parseInt(posX) + "px",
+		top: parseInt(posY) + "px"
+	}, {duration:500, fill:"forwards"});
+})
 
-function turnSpotlight() {
-	if (spotlightOn == false) {
-		spotlightOn = true;
-		document.getElementById("switch").src = "images/light-bulb-off.jpg"
-		handleMouseMove
-		
-	}
-	else if (spotlightOn == true) {
-		spotlightOn = false;
-		document.getElementById("switch").src = "images/light-bulb.jpg"
-		spotlightEl.style.background = '';
-		handleMouseMove
-	}
-}
-
-
-function handleMouseMove(event) {
-    const { clientX, clientY } = event;
-    if (spotlightOn) {
-		spotlightEl.style.background = `radial-gradient(circle at ${clientX}px ${clientY}px, #00000000 10px, #000000ee 350px)`;
-	}
-	if (spotlightOn == false) {
-		spotlightEl.style.background = '';
-	}
-}
-
-document.addEventListener("mousedown", handleMouseMove)
-document.addEventListener("mousemove", handleMouseMove)// JavaScript Document
-
-
-
+window.addEventListener("mousedown", function (){
+	cursorOutline.animate({
+		width: "50px" ,
+		height: "50px"
+	}, {duration:150, fill:"forwards"})
+})
+window.addEventListener("mouseup", function (){
+	cursorOutline.animate({
+		width: "22px" ,
+		height: "22px"
+	}, {duration:150, fill:"forwards"})
+})
