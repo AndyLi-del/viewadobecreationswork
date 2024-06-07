@@ -1,0 +1,23 @@
+canvas {
+  image-rendering: pixelated;
+  border:solid black 3px;
+}
+h1 {
+  text-align:center;
+  font-size:150px;
+  color:red;
+}
+a {
+  text-align:center;
+  color:black;
+  margin-left:45%;
+  font-size:50px;
+  border:solid 5px black;
+  padding:10px;
+  border-radius:10px;
+  background-color:red;
+}
+h3 {
+  text-align:center;
+  margin-bottom:50px;
+}

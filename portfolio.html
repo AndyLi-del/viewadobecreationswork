@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andy Li's Portfolio</title>
+<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Main Container -->
+<canvas id="canvas-left"></canvas>
+<canvas id="canvas-right"></canvas>
+<div class="container"> 
+  <!-- Header -->
+  <header class="header">
+    <h4 class="logo">Portfolio</h4>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column">
+      <h1 id="name">ANDY LI</h1>
+      <img src="images/profile.png" alt="" class="profile"> </div>
+    <div class="column">
+      <p><strong>Hello, my name is Andy Li, this is a site where I will put what I made in Adobe Creations Class and also some other things I made myself. I'm 13 years old and I am in 7th grade(2024).</strong></p>
+      <p><strong><em>Now, look for the switch to turn on the lights and explore my site!</em></strong></p>
+	  </div>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><video alt="" controls width="2000" class="cards"/><source src="images/card-trick.mp4" type="video/mp4" /></video></a>
+      <h4>How-to-do a Card Trick</h4>
+      <p class="tag">Made with Adobe Premiere Pro</p>
+      <p class="text_column">This how to ideo teaches you how to do a amazing card trick that is both easy to do and easy to understand.</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><video alt="" controls width="2000" class="cards"/><source src="images/Andy&Jack.mp4" type="video/mp4" /></video></a>
+      <h4>Andy and Jack</h4>
+      <p class="tag">Made with Adobe Premiere Pro</p>
+      <p class="text_column">A video that shows you who Andy and Jack is and thir name masked behind the body with Adobe Premiere Pro.</p>
+    </div>
+    <div class="thumbnail"> <a href="game/game.html"><img src="images/fighting.gif" alt="" width="2000" class="cards"/></a>
+      <h4>A Game(Older Version)</h4>
+      <p class="tag">HTML, CSS, JS</p>
+      <p class="text_column">A game I made in the weekend when I was bored. You can click to play but don't, it is bad. If you want to play the newest version, go to <a href="http://www.geometric-fight.glitch.me">geometric-fight.glitch.me</a></p>
+    </div>
+	<div class="thumbnail"> <a href="game/game.html"><img alt="" width="2000" class="cards"/></a>
+      <h4>A Game(Another one)</h4>
+      <p class="tag">HTML, CSS, JS</p>
+      <p class="text_column">A game I made in the summer break when I was bored. I don't really name my games. It has a "daily" challenge level that I will never upload a new one. <a href="http://www.geometry-teleport.glitch.me">geometric-fight.glitch.me</a></p>
+    </div>
+	<img onclick="turnSpotlight()" id="switch" class="switch" src="images/light-bulb-off.jpg">
+  </div>
+  <!-- Footer Section -->
+  <footer id="contact">
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <div class="button" onclick="window.open('contact.html')">
+      <p>CONTACT</p>
+      <p>ME </p>
+    </div>
+
+  </footer>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2024 - <strong>Portfolio</strong></div>
+</div>
+<div id="spotlight">
+</div>
+<!-- Main Container Ends -->
+<script src="script.js"></script>
+</body>
+</html>
