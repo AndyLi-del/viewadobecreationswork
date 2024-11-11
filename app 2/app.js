@@ -54,7 +54,7 @@ function clearLevel() {
   });
   obstacles = [];
 }
-
+const squares = Array.from(document.querySelectorAll(".grid div"))
 /**
  * Loads and renders a level from a text file
  * @param {string} textFileName - Path to the level file
