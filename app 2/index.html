@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Geometry Teleport</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a onclick="loadLevel('Leveldaily1.txt')">Daily Challenge</a>
+      <div>
+        <button onclick="loadLevel('levels/Level1.txt')">Level1</button>
+        <button onclick="loadLevel('levels/Level2.txt')">Level2</button>
+        <button onclick="loadLevel('levels/Level3.txt')">Level3</button>
+        <button onclick="loadLevel('levels/Level4.txt')">Level4</button>
+        <button onclick="loadLevel('levels/Level5.txt')">Level5</button>
+        <button onclick="loadLevel('levels/Level6.txt')">Level6</button>
+        <button onclick="loadLevel('levels/Level7.txt')">Level7</button>
+        <button onclick="loadLevel('levels/Level8.txt')">Level8</button>
+        <button onclick="loadLevel('levels/Level9.txt')">Level9</button>
+        <button onclick="loadLevel('levels/Level10.txt')">Level10</button>
+        <button onclick="loadLevel('levels/Level11.txt')">Level11</button>
+        <button onclick="loadLevel('levels/Level12.txt')">Level12</button>
+        <button onclick="loadLevel('levels/Level13.txt')">Level13</button>
+        <button onclick="loadLevel('levels/Level14.txt')">Level14</button>
+        <button onclick="loadLevel('levels/Level15.txt')">Level15</button>
+        <button onclick="loadLevel('levels/Level16.txt')">Level16</button>
+        <button onclick="loadLevel('levels/Level17.txt')">Level17</button>
+        <button onclick="loadLevel('levels/Level18.txt')">Level18</button>
+        <button onclick="loadLevel('levels/Level19.txt')">Level19</button>
+        <button onclick="loadLevel('levels/Level20.txt')">Level20</button>
+        <button onclick="loadLevel('levels/Level21.txt')">Level21</button>
+        <button onclick="loadLevel('levels/Level22.txt')">Level22</button>
+        <button onclick="loadLevel('levels/Level23.txt')">Level23</button>
+        <button onclick="loadLevel('levels/Level24.txt')">Level24</button>
+      </div>
+        
+    </div>
+    
+    <p id ="top">You used <span id="used">0</span>/<span id="content">0</span> Steps</p>
+    <div class="grid"></div>
+
+    <p>"<span id="levelReading">1</span>"</p>
+    <h1 class="change">Made by Andy Li</h1>
+    
+    <img width="100px" height="100px" src="https://seeklogo.com/images/U/up-arrow-sign-logo-8766E5A122-seeklogo.com.png" onclick="touchUp()">
+    <img id="down" src="https://seeklogo.com/images/U/up-arrow-sign-logo-8766E5A122-seeklogo.com.png" onclick="touchDown()">
+    <img id="left" src="https://seeklogo.com/images/U/up-arrow-sign-logo-8766E5A122-seeklogo.com.png" onclick="touchLeft()">
+    <img id="right" src="https://seeklogo.com/images/U/up-arrow-sign-logo-8766E5A122-seeklogo.com.png" onclick="touchRight()">
+    <script src="app.js" defer></script>
+  </body>
+</html>

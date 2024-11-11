@@ -1,0 +1,17 @@
+g a b a a a a a a a a a a a a a
+b 6 b a a a a a a a a a a a a a
+a b b b b b a a a a a a a a a a
+a a b b 2 b a a a a a a a a a a
+a a b b 0 b a a a a a a a a a a
+a a b b b b a a a a a a a a a a
+a a b 3 5 b a a a a a a a a a a
+a a b 4 6 b a a a a a a a a a a
+a a b b b b a a a a a a a a a a
+a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a
+a a a a a a a a a a a a a b b b
+a a a a a a a a a a a a a b 1 4
+a a a a a a a a a a a a a b b 3
+a a a a a a a a a a a a a b b 2
+a a a a a a a a a a a a b 5 1 p
+step10

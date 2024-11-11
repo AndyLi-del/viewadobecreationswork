@@ -1,0 +1,170 @@
+.grid {
+  width: 512px;
+  height: 512px;
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color:#ADF7B6;
+}
+button.active {
+  color:red;
+}
+body {
+  background-color:white;
+}
+
+#top {
+  font-size:15px;
+  margin-bottom:5px;
+  margin-top:5px;
+}
+
+.grid div {
+  width: 30px;
+  height: 30px;
+  border: solid black 1px;
+}
+.goal {
+  background-color: blue;
+  border: solid black 1px;
+}
+.obstacle {
+  background-color: black;
+  border: solid black 1px;
+}
+.direct {
+  background-color: cyan;
+  border: solid black 1px; 
+}
+.portal1 {
+  background-color: orange;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal2 {
+  background-color: green;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal3 {
+  background-color: purple;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal4 {
+  background-color: yellow;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal5 {
+  background-color: chocolate;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal6 {
+  background-color: tan;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal7 {
+  background-color: pink;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal8 {
+  background-color: #7DBBC3;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal9 {
+  background-color: #F4B9B2;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal10 {
+  background-color: #DAEDBD;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal11 {
+  background-color: #DE6B48;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal12 {
+  background-color: #0A2463;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal13 {
+  background-color: #D8315B;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal14 {
+  background-color: #08A045;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal15 {
+  background-color: #456990;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.portal16 {
+  background-color: #6B2737;
+  border: solid black 1px;
+  border-radius: 1px;
+}
+.player {
+  background-color: red;
+  border: solid black 1px; 
+}
+.topnav {
+  background-color: #79ADDC;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #FFC09F;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ADF7B6;
+  color: black;
+  
+}
+.change.hover {
+  background-color:red;
+}
+#down {
+  transform: rotate(180deg);
+  width:100px;
+  height:100px;
+}
+#left {
+  transform: rotate(270deg);
+  width:100px;
+  height:100px;
+}
+#right {
+  transform: rotate(90deg);
+  width:100px;
+  height:100px;
+}
