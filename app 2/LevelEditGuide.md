@@ -36,12 +36,21 @@
   step1
 
   a = blank space
+  
   p = player spawn point
+  
   g = goal
+  
   u = portal to goal
+  
   b = obstacle
+  
   1 = portal no.1
+  
   2 = portal no.2
+  
   3 = .....
+  
   ......
+  
 add stepxxx at last line to indicate steps
