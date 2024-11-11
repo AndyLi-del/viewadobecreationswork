@@ -1,23 +1,40 @@
 # Guide to creating your own levels in text editor
   You will use a template that can be found in LevelTemplate.txt
+  
   a a a a a a a a a a a a a a a a 
+  
   a a a a a a a a a a a a a a a a
+  
   a a a a a a a a a a a a a a a a 
+  
   a a a a a a a a a a a a a a a a
+  
   a a a a a a a a a a a a a a a a 
+  
   a a a a a a a a a a a a a a a a
+  
   a a a a a a a a a a a a a a a a 
+  
   a a a a a a a a a a a a a a a a
+  
   a a a a a a a a a a a a a a a a 
+  
   a a a a a a a a a a a a a a a a
+  
   a a a a a a a a a a a a a a a a 
+  
   a a a a a a a a a a a a a a a a
+  
   a a a a a a a a a a a a a a a a 
+  
   a a a a a a a a a a a a a a a a
+  
   a a a a a a a a a a a a a a a a 
+  
   a a a a a a a a a a a a a a a a
+  
   step1
-##legend
+
   a = blank space
   p = player spawn point
   g = goal
