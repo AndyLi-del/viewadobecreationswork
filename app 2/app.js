@@ -49,6 +49,7 @@ function clearLevel() {
   currentPortalIndex = -1;
   width = 16;
   stepsUsed = 0;
+  used.innerText = stepsUsed
   portals.forEach((value, key) => {
     portals.set(key, []);
   });
