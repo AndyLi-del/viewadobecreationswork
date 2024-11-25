@@ -63,10 +63,8 @@ const squares = Array.from(document.querySelectorAll(".grid div"))
 function loadLevel(textFileName) {
   console.log("hello")
   clearLevel()
-  var levelParts = textFileName.split("Level")
-  var levelNumber = levelParts[1].split(".txt")
-  const currentLevel = levelNumber[0]
-  var displayLevelNumber = currentLevel
+  var levelName = textFileName.split(".txt")
+  var displayLevelNumber = levelName
   const levelReading = document.getElementById("levelReading");
   levelReading.innerText = displayLevelNumber
 
@@ -75,24 +73,24 @@ function loadLevel(textFileName) {
     return arrayOfStrings
   }
 
-  function renderLevel(levelName) {
+  function renderLevel(contents) {
     const isGoal = (element) => element == "g";
-    currentGoalIndex = levelName.findIndex(isGoal);
+    currentGoalIndex = contents.findIndex(isGoal);
     squares[currentGoalIndex].classList.add('goal')
 
-    if (levelName.includes("u")) {
+    if (contents.includes("u")) {
     const isDirect = (element) => element == "u";
-    currentDirectIndex = levelName.findIndex(isDirect);
+    currentDirectIndex = contents.findIndex(isDirect);
     squares[currentDirectIndex].classList.add('direct')
     }
 
     const isPlayer = (element) => element == "p";
-    currentPlayerIndex = levelName.findIndex(isPlayer);
+    currentPlayerIndex = contents.findIndex(isPlayer);
     squares[currentPlayerIndex].classList.add('player')
 
     // Handle obstacles
-    if (levelName.includes("b")) {
-        levelName.forEach((element, index) => {
+    if (contents.includes("b")) {
+        contents.forEach((element, index) => {
             if (element === 'b') {
                 obstacles.push(index);
                 squares[index].classList.add('obstacle');
@@ -103,8 +101,8 @@ function loadLevel(textFileName) {
     // Handle all portals (1-16)
     for (let portalNum = 1; portalNum <= 16; portalNum++) {
         const portalStr = portalNum.toString();
-        if (levelName.includes(portalStr)) {
-            levelName.forEach((element, index) => {
+        if (contents.includes(portalStr)) {
+            contents.forEach((element, index) => {
                 if (element === portalStr) {
                     portals.get(portalNum).push(index);
                     squares[index].classList.add(`portal${portalNum}`);
@@ -113,7 +111,7 @@ function loadLevel(textFileName) {
         }
     }
 
-    var levelStepsParts = levelName[256].split("step")
+    var levelStepsParts = contents[256].split("step")
     const levelPrefix = levelStepsParts.shift()
     var targetSteps = levelStepsParts.shift();
     return targetSteps
@@ -122,7 +120,9 @@ function loadLevel(textFileName) {
   const t = document.getElementById("text");
   fetch(textFileName).then(res=>{
     return res.text().then(text=>{
+
           let level = splitString(text)
+          console.log(text)
           console.log(level)
           renderLevel(level)
           var levelStepsParts = level[256].split("step")
